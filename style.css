@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    ---base-font-size: 1.6rem;
+    ---bigger-font-size: 2rem;
+    --gutter-size: 2rem;
+    ---breapoint-row-col-width: 100%;
+}
+
+@media (min-width: 1200px)  {
+    :root {
+        ---breapoint-row-col-width: 50%;
+        --gutter-size: 1rem;
+    }
+}
+
+html {
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: var(---base-font-size);
+}
+
+/*****  reusable *****/
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Row__col {
+    width: calc(var(---breapoint-row-col-width) - var(--gutter-size));
+    padding: var(--gutter-size);
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sekce-1 img {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.sekce-2 img {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.obsah-nadpisy {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.obsah-nadpisy:after {
+    display: block;
+    content: "";
+    width: 200px;
+    border: 1px solid #3567e1;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+
+/*****  header *****/
+
+#logo img {
+    display: block;
+    width: 250px;
+    position: absolute;
+    top: 5%;
+    z-index: 1000;
+}
+
+.Header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/images/chalka.jpg");
+    height: 100vh;
+    background-size: cover;
+    letter-spacing: 1px;
+
+}
+
+.Header-list {
+    background: unset;
+    height: 120px;
+}
+
+.Header-list .Navigace {
+    color: black;
+}
+
+.Navigace {
+    float: right;
+    color: white;
+}
+
+.Navigace li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10%;
+    text-transform: uppercase;
+}
+
+.Navigace li a {
+    color: inherit;
+    font-size: var(---bigger-font-size);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.Navigace li a:hover, .Navigace li a:active {
+    border-bottom: 2px solid #0e255e;
+}
+
+.SocialLinks {
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    transform: translate(-10%, -40%);
+    letter-spacing: 3px;
+    color: white;
+}
+
+.SocialLinks a {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 20px;
+    border: 1px solid #3567e1;
+    background-color: #3567e1;
+    padding: 10px 35px;
+    border-radius: 15px;
+    color: inherit;
+}
+
+.SocialLinks__title {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.SocialLinks a:hover, .SocialLinks a:active {
+    background-color: #0e255e;
+    border: 1px solid #0e255e;
+    transition: 0.5s;
+}
+
+/****** main *****/
+.Benefits {
+    margin-bottom: 10px;
+}
+
+.Benefits p {
+    margin-left: 70px;
+    font-size: var(---bigger-font-size);
+    padding-top: 15px;
+
+}
+
+.Benefits div {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px;
+    float: left;
+}
+
+/****** REFERENCE ******/
+.Reference {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("/images/chalka.jpg");
+    height: 200px;
+}
+
+.Reference h1 {
+    color: #fff;
+    padding-top: 40px;
+}
+
+.Reference h1::after {
+    display: block;
+    content: "";
+    width: 400px;
+}
+
+.Form {
+    width: 30%;
+    text-align: center;
+
+}
+
+.Form input {
+    width: 80%;
+    margin: 5px 0;
+    border: 2px solid #3567e1;
+    padding: 10px 0 10px 5px;
+    border-radius: 10px;
+
+}
+
+.Form input[type="submit"] {
+    background-color: #fff;
+
+}
+
+.Form textarea {
+    width: 80%;
+    padding-left: 5px;
+    border-radius: 10px;
+
+    border: 2px solid #3567e1;
+}
+
+.Footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Separate pages */
+
+.NewsItem {
+    position: relative;
+}
+
+.NewsItem__caption {
+    opacity: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transition: all 0.5s;
+    color: white;
+    font-weight: 700;
+    font-size: var(---bigger-font-size);
+}
+
+.NewsItem:hover .NewsItem__caption {
+    opacity: 1;
+}
+
+.EmployeeItems {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.EmployeeItems__name {
+    font-size: var(---bigger-font-size);
+    font-weight: 700;
+}
