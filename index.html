@@ -9,7 +9,7 @@
 </head>
 <body>
 <header class="Header">
-    <div class="nav-bar container">
+    <div class="container">
         <div id="logo">
             <a href="/">
                 <img src="./images/logo.png" alt="naše logo">
@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="SocialLinks">
-        <h1 class="SocialLinks__title">Jedině naše pizzy</h1>
+        <h2 class="SocialLinks__title">Jedině naše pizzy</h2>
         <a href="#">Facebook</a>
         <a href="#">Instagram</a>
         <a href="#">Twitter</a>
@@ -36,7 +36,7 @@
 <main>
 
     <div class="container">
-        <h1 class="obsah-nadpisy">Naše pizzy</h1>
+        <h1 class="BasicHeading">Naše pizzy</h1>
     </div>
     <div class="Row">
         <div class="Row__col">
@@ -48,7 +48,7 @@
     </div>
 
     <div>
-        <h1 class="obsah-nadpisy">O naší pizze</h1>
+        <h2 class="BasicHeading">O naší pizze</h2>
         <div class="Row">
             <div class="Row__col">
                 <img src="./images/pizza3.jpg" alt="Další pizza" class="img-fluid">
@@ -76,19 +76,27 @@
         </div>
     </div>
     <div class="Reference">
-        <h1 class="obsah-nadpisy"> Co o nás řekli naši zákazníci</h1>
+        <h2 class="BasicHeading"> Co o nás řekli naši zákazníci</h2>
     </div>
-    <div id="zamestnanci">
-        <h2>Zaměstnanci</h2>
-    </div>
-    <div class=""></div>
-    <h1 class="obsah-nadpisy">Formulář</h1>
+    <h2 class="BasicHeading">Formulář</h2>
 
     <form class="Form container" action="">
-        <input type="text" placeholder="Jméno">
-        <input type="text" placeholder="Přijmení">
-        <input type="mail" placeholder="Email">
-        <textarea placeholder="Váš text" name="" id="" cols="30" rows="5"></textarea>
+        <label for="name">
+            Jméno
+        </label>
+        <input type="text" name="name" id="name">
+        <label for="surname">
+            Přijmení
+        </label>
+        <input type="text" name="surname" id="surname">
+        <label for="mail">
+            Email
+        </label>
+        <input type="email" name="mail" id="mail">
+        <label for="text">
+            Váš text
+        </label>
+        <textarea name="text" id="text" cols="30" rows="5"></textarea>
         <input type="submit" value="Odeslat">
     </form>
 </main>

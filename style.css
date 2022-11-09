@@ -65,18 +65,17 @@ body {
 }
 
 
-.obsah-nadpisy {
+.BasicHeading {
     text-align: center;
     margin-top: 20px;
 }
 
-.obsah-nadpisy:after {
+.BasicHeading:after {
     display: block;
     content: "";
     width: 200px;
     border: 1px solid #3567e1;
-    margin: 0px auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px 0;
 }
 
 
@@ -204,31 +203,26 @@ body {
 }
 
 .Form {
-    width: 30%;
-    text-align: center;
-
+    max-width: 900px;
+    width: 100%;
 }
 
-.Form input {
-    width: 80%;
-    margin: 5px 0;
+.Form input, .Form textarea {
+    width: 100%;
+    margin: 10px 0;
     border: 2px solid #3567e1;
     padding: 10px 0 10px 5px;
     border-radius: 10px;
+}
 
+.Form label {
+    width: 100%;
+    text-align: left;
 }
 
 .Form input[type="submit"] {
     background-color: #fff;
 
-}
-
-.Form textarea {
-    width: 80%;
-    padding-left: 5px;
-    border-radius: 10px;
-
-    border: 2px solid #3567e1;
 }
 
 .Footer {

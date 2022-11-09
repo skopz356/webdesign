@@ -9,7 +9,7 @@
 </head>
 <body>
 <header class="Header-list">
-    <div class="nav-bar container">
+    <div class="container">
         <div id="logo">
             <a href="../">
                 <img src="../images/logo.png" alt="naše logo">
@@ -28,7 +28,7 @@
 </header>
 <main>
     <div class="container">
-        <h1 class="obsah-nadpisy">Zaměstnanci</h1>
+        <h1 class="BasicHeading">Zaměstnanci</h1>
     </div>
     <div class="EmployeeItems">
         <div>
@@ -43,7 +43,7 @@
     </div>
 
     <div>
-        <h1 class="obsah-nadpisy">O naší pizze</h1>
+        <h2 class="BasicHeading">O naší pizze</h2>
         <div class="Row">
             <div class="Row__col">
                 <img src="../images/pizza3.jpg" alt="Další pizza" class="img-fluid">
@@ -70,13 +70,25 @@
             </div>
         </div>
     </div>
-    <h1 class="obsah-nadpisy">Formulář</h1>
+    <h2 class="BasicHeading">Formulář</h2>
 
     <form class="Form container" action="">
-        <input type="text" placeholder="Jméno">
-        <input type="text" placeholder="Přijmení">
-        <input type="mail" placeholder="Email">
-        <textarea placeholder="Váš text" name="" id="" cols="30" rows="5"></textarea>
+        <label for="name">
+            Jméno
+        </label>
+        <input type="text" name="name" id="name">
+        <label for="surname">
+            Přijmení
+        </label>
+        <input type="text" name="surname" id="surname">
+        <label for="mail">
+            Email
+        </label>
+        <input type="email" name="mail" id="mail">
+        <label for="text">
+            Váš text
+        </label>
+        <textarea name="text" id="text" cols="30" rows="5"></textarea>
         <input type="submit" value="Odeslat">
     </form>
 </main>
