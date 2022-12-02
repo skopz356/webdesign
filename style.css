@@ -280,13 +280,67 @@ body {
 }
 
 .EmployeeItems {
+
     display: grid;
     grid-template-columns: auto auto auto;
+    padding: 30px;
+
+
 }
 
 .EmployeeItems__name {
     font-size: var(---bigger-font-size);
     font-weight: 700;
+
 }
 
-/* Kontakty */
+.EmployeeHead{
+    margin-top:200px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.EmployeeCard{
+padding: 20px;
+box-shadow: orange 10px 10px 40px;
+margin: 20px;
+max-width: 550px;
+}
+
+.EmployeePost{
+    font-size: 12px;
+    font-weight: 200;
+    padding-left: 2%;
+}
+
+.EmployeeCard:hover{
+    transform: scale(1.1);
+}
+.EmployeeText{
+    font-size: 18px;
+    padding-top: 20px;
+    font-weight: 300;
+    padding-bottom: 10px;
+
+}
+.EmployeeContact{
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.EmployeePhoto{
+    border-radius: 50%;
+}
+.column25 {
+    float: left;
+    width: 25%;
+
+
+   }
+
+   .column75{
+    float: left;
+    width: 75%;
+
+   }
