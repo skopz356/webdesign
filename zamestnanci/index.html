@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +18,13 @@
             </a>
         </div>
 
-        <div class="Navigace">
+        <div class="Navigation">
+            <div class="Navigation__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
                 <li><a href="../#info">Informace</a></li>
                 <li><a href="../novinky/">Novinky</a></li>
@@ -29,114 +36,123 @@
 </header>
 <main>
     <div class="container">
-            <h1 class="EmployeeHead">Zaměstnanci</h1>
-        </div>
-
-    <div class="EmployeeItems">
-
-        <div class="EmployeeCard">
-            <div class="column25">
-                <img class="EmployeePhoto" src="../images/chalka.jpg" height="70px" width="70px">
-            </div>
-            <div class="column75">
-            <p class="EmployeeItems__name"> Martin Prcházka</p>
-            <p class="EmployeePost">CEO</p>
-            <p class="EmployeeText">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nulla pulvinar eleifend sem. Aliquam in lorem sit amet leo accumsan lacinia. Nulla non lectus sed nisl molestie malesuada.
-            </p>
-            <p class="EmployeeContact">
-                <i class="fa fa-phone" aria-hidden="false"></i> +420 111 222 333 <br>
-                <i class="fa fa-envelope" aria-hidden="true"></i> prochazka@mail.cz
-            </p>
-        </div>
-        </div>
-        <div class="EmployeeCard">
-            <div class="column25">
-                <img class="EmployeePhoto" src="../images/chalka.jpg" height="70px" width="70px">
-            </div>
-            <div class="column75">
-            <p class="EmployeeItems__name"> Martin Porcházka</p>
-            <p class="EmployeePost">Manager</p>
-            <p class="EmployeeText">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nulla pulvinar eleifend sem. Aliquam in lorem sit amet leo accumsan lacinia. Nulla non lectus sed nisl molestie malesuada.
-            </p>
-            <p class="EmployeeContact">
-                <i class="fa fa-phone" aria-hidden="false"></i> +420 111 222 333 <br>
-                <i class="fa fa-envelope" aria-hidden="true"></i> prochazka@mail.cz
-            </p>
-        </div>
-        </div>
-        <div class="EmployeeCard">
-            <div class="column25">
-                <img class="EmployeePhoto" src="../images/chalka.jpg" height="70px" width="70px">
-            </div>
-            <div class="column75">
-            <p class="EmployeeItems__name"> Martin Porcházka</p>
-            <p class="EmployeePost">Manager</p>
-            <p class="EmployeeText">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nulla pulvinar eleifend sem. Aliquam in lorem sit amet leo accumsan lacinia. Nulla non lectus sed nisl molestie malesuada.
-
-            </p>
-            <p class="EmployeeContact">
-                <i class="fa fa-phone" aria-hidden="false"></i> +420 111 222 333 <br>
-                <i class="fa fa-envelope" aria-hidden="true"></i> prochazka@mail.cz
-            </p>
-        </div>
-        </div>
-        <div class="EmployeeCard">
-            <div class="column25">
-                <img class="EmployeePhoto" src="../images/chalka.jpg" height="70px" width="70px">
-            </div>
-            <div class="column75">
-            <p class="EmployeeItems__name"> Martin Porcházka</p>
-            <p class="EmployeePost">Hlavní kuchař</p>
-            <p class="EmployeeText">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nulla pulvinar eleifend sem. Aliquam in lorem sit amet leo accumsan lacinia. Nulla non lectus sed nisl molestie malesuada.
-
-            </p>
-            <p class="EmployeeContact">
-                <i class="fa fa-phone" aria-hidden="false"></i> +420 111 222 333 <br>
-                <i class="fa fa-envelope" aria-hidden="true"></i> prochazka@mail.cz
-            </p>
-        </div>
-        </div>
-        <div class="EmployeeCard">
-            <div class="column25">
-                <img class="EmployeePhoto" src="../images/chalka.jpg" height="70px" width="70px">
-            </div>
-            <div class="column75">
-            <p class="EmployeeItems__name"> Martin Porcházka</p>
-            <p class="EmployeePost">Pizzař</p>
-            <p class="EmployeeText">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nulla pulvinar eleifend sem. Aliquam in lorem sit amet leo accumsan lacinia. Nulla non lectus sed nisl molestie malesuada.
-
-            </p>
-            <p class="EmployeeContact">
-                <i class="fa fa-phone" aria-hidden="false"></i> +420 111 222 333 <br>
-                <i class="fa fa-envelope" aria-hidden="true"></i> prochazka@mail.cz
-            </p>
-        </div>
-        </div>
-        <div class="EmployeeCard">
-            <div class="column25">
-                <img class="EmployeePhoto" src="../images/chalka.jpg" height="70px" width="70px">
-            </div>
-            <div class="column75">
-            <p class="EmployeeItems__name"> Martin Porcházka</p>
-            <p class="EmployeePost">Pizzař</p>
-            <p class="EmployeeText">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nulla pulvinar eleifend sem. Aliquam in lorem sit amet leo accumsan lacinia. Nulla non lectus sed nisl molestie malesuada.
-
-            </p>
-            <p class="EmployeeContact">
-                <i class="fa fa-phone" aria-hidden="false"></i> +420 111 222 333 <br>
-                <i class="fa fa-envelope" aria-hidden="true"></i> prochazka@mail.cz
-            </p>
-        </div>
-        </div>
+        <h1 class="EmployeeHead">Zaměstnanci</h1>
     </div>
 
+    <div class="EmployeeItems">
+        <div class="EmployeeCard">
+            <div class="column25">
+                <img class="EmployeePhoto" src="../images/chalka.jpg" height="70px" width="70px">
+            </div>
+            <div class="column75">
+                <p class="EmployeeItems__name"> Martin Prcházka</p>
+                <p class="EmployeePost">CEO</p>
+                <p class="EmployeeText">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nulla
+                    pulvinar eleifend sem. Aliquam in lorem sit amet leo accumsan lacinia. Nulla non lectus sed nisl
+                    molestie malesuada.
+                </p>
+                <p class="EmployeeContact">
+                    <i class="fa fa-phone" aria-hidden="false"></i> +420 111 222 333 <br>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> prochazka@mail.cz
+                </p>
+            </div>
+        </div>
+        <div class="EmployeeCard">
+            <div class="column25">
+                <img class="EmployeePhoto" src="../images/chalka.jpg" height="70px" width="70px">
+            </div>
+            <div class="column75">
+                <p class="EmployeeItems__name"> Martin Porcházka</p>
+                <p class="EmployeePost">Manager</p>
+                <p class="EmployeeText">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nulla
+                    pulvinar eleifend sem. Aliquam in lorem sit amet leo accumsan lacinia. Nulla non lectus sed nisl
+                    molestie malesuada.
+                </p>
+                <p class="EmployeeContact">
+                    <i class="fa fa-phone" aria-hidden="false"></i> +420 111 222 333 <br>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> prochazka@mail.cz
+                </p>
+            </div>
+        </div>
+        <div class="EmployeeCard">
+            <div class="column25">
+                <img class="EmployeePhoto" src="../images/chalka.jpg" height="70px" width="70px">
+            </div>
+            <div class="column75">
+                <p class="EmployeeItems__name"> Martin Porcházka</p>
+                <p class="EmployeePost">Manager</p>
+                <p class="EmployeeText">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nulla
+                    pulvinar eleifend sem. Aliquam in lorem sit amet leo accumsan lacinia. Nulla non lectus sed nisl
+                    molestie malesuada.
 
+                </p>
+                <p class="EmployeeContact">
+                    <i class="fa fa-phone" aria-hidden="false"></i> +420 111 222 333 <br>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> prochazka@mail.cz
+                </p>
+            </div>
+        </div>
+        <div class="EmployeeCard">
+            <div class="column25">
+                <img class="EmployeePhoto" src="../images/chalka.jpg" height="70px" width="70px">
+            </div>
+            <div class="column75">
+                <p class="EmployeeItems__name"> Martin Porcházka</p>
+                <p class="EmployeePost">Hlavní kuchař</p>
+                <p class="EmployeeText">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nulla
+                    pulvinar eleifend sem. Aliquam in lorem sit amet leo accumsan lacinia. Nulla non lectus sed nisl
+                    molestie malesuada.
+
+                </p>
+                <p class="EmployeeContact">
+                    <i class="fa fa-phone" aria-hidden="false"></i> +420 111 222 333 <br>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> prochazka@mail.cz
+                </p>
+            </div>
+        </div>
+        <div class="EmployeeCard">
+            <div class="column25">
+                <img class="EmployeePhoto" src="../images/chalka.jpg" height="70px" width="70px">
+            </div>
+            <div class="column75">
+                <p class="EmployeeItems__name"> Martin Porcházka</p>
+                <p class="EmployeePost">Pizzař</p>
+                <p class="EmployeeText">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nulla
+                    pulvinar eleifend sem. Aliquam in lorem sit amet leo accumsan lacinia. Nulla non lectus sed nisl
+                    molestie malesuada.
+
+                </p>
+                <p class="EmployeeContact">
+                    <i class="fa fa-phone" aria-hidden="false"></i> +420 111 222 333 <br>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> prochazka@mail.cz
+                </p>
+            </div>
+        </div>
+        <div class="EmployeeCard">
+            <div class="column25">
+                <img class="EmployeePhoto" src="../images/chalka.jpg" height="70px" width="70px">
+            </div>
+            <div class="column75">
+                <p class="EmployeeItems__name"> Martin Porcházka</p>
+                <p class="EmployeePost">Pizzař</p>
+                <p class="EmployeeText">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Nulla
+                    pulvinar eleifend sem. Aliquam in lorem sit amet leo accumsan lacinia. Nulla non lectus sed nisl
+                    molestie malesuada.
+
+                </p>
+                <p class="EmployeeContact">
+                    <i class="fa fa-phone" aria-hidden="false"></i> +420 111 222 333 <br>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> prochazka@mail.cz
+                </p>
+            </div>
+        </div>
+    </div>
 
 
 </main>
