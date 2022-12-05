@@ -457,3 +457,28 @@ body {
 .EmployeePhoto{
     border-radius: 50%;
 }
+
+
+/* Vyhledavani */
+.SearchHeader{
+    text-align: center;
+    font-size: var(--bigger-font-size);
+}
+
+.SearchItems{
+    padding: 30px;
+    margin-top: 200px;
+}
+
+.SearchCard{
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.SearchHead{
+    font-size: var(--bigger-font-size);
+}
+
+.SearchText{
+    font-size: var(--smaller-font-size);
+}
