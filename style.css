@@ -147,7 +147,7 @@ body {
         color: white;
     }
 
-    
+
 }
 
 @media (max-width: 799px) {
@@ -391,7 +391,7 @@ body {
     bottom: 20px;
     left: 20px;
     transition: all 0.5s;
-    color: white;
+    color: black;
     font-weight: var(--font-weight-bold);
     font-size: var(--bigger-font-size);
     background-color: orange;
@@ -423,12 +423,12 @@ body {
 
 .column25Employee {
     float: left;
-    width: 25%; 
+    width: 25%;
    }
 
 .column75Employee{
     float: left;
-    width: 75%; 
+    width: 75%;
    }
 
 .EmployeeItems {
@@ -488,7 +488,7 @@ body {
 
     .EmployeeItems{
         grid-template-columns: auto ;
-        
+
     }
 }
 
@@ -504,7 +504,7 @@ body {
         width: 100% ;
     }
 
-    
+
 }
 
 /* Vyhledavani */
@@ -513,12 +513,12 @@ body {
 
 .column25Search{
     float: left;
-    width: 25%; 
+    width: 25%;
 }
 
 .column75Search{
     float: left;
-    width: 75%; 
+    width: 75%;
 }
 
 .SearchHeader{
@@ -548,7 +548,7 @@ body {
 .SearchType{
     font-size: var(--smaller-font-size);
     font-weight: 200;
-    
+
 }
 
 @media (max-width: 899px) {
@@ -564,7 +564,7 @@ body {
     }
 
     .SearchText{
-        padding-bottom: 50px 
+        padding-bottom: 50px
     }
-    
+
 }
