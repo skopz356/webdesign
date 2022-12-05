@@ -423,29 +423,44 @@ body {
 
 @media (max-width: 799px) {
 
-    .column25{
-        float: left;
-        width: 100%;
+    .column25Employee{
+        float: left !important;
+        width: 100% !important;
     }
 
-    .column75{
-        float: left;
-        width: 100%;
+    .column75Employee{
+        float: left !important;
+        width: 100% !important;
     }
 
     .EmployeeItems{
-        grid-template-columns: auto;
+        grid-template-columns: auto !important;
         
     }
 }
 
+@media (max-width: 1299px) {
 
-.column25 {
+    .column25Employee{
+        float: left !important;
+        width: 100% !important;
+    }
+
+    .column75Employee{
+        float: left !important;
+        width: 100% !important;
+    }
+
+    
+}
+
+
+.column25Employee {
     float: left;
     width: 25%; 
    }
 
-.column75{
+.column75Employee{
     float: left;
     width: 75%; 
    }
@@ -494,6 +509,34 @@ body {
 
 
 /* Vyhledavani */
+
+@media (max-width: 899px) {
+
+    .column25Search{
+        float: left !important;
+        width: 100% !important;
+    }
+
+    .column75Search{
+        float: left !important;
+        width: 100% !important;
+    }
+
+    .SearchText{
+        padding-bottom: 50px !important;
+    }
+    
+}
+
+.column25Search{
+    float: left;
+    width: 25%; 
+}
+
+.column75Search{
+    float: left;
+    width: 75%; 
+}
 
 .SearchHeader{
     text-align: center;
