@@ -471,8 +471,9 @@ body {
 }
 
 .SearchCard{
-    margin-top: 70px;
+    margin-top: 110px;
     padding: 20px;
+    margin-bottom: 110px;
 }
 
 .SearchHead{
@@ -481,4 +482,10 @@ body {
 
 .SearchText{
     font-size: var(--smaller-font-size);
+}
+
+.SearchType{
+    font-size: var(--smaller-font-size);
+    font-weight: 200;
+    
 }
