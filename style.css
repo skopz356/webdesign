@@ -5,12 +5,24 @@
 }
 
 :root {
-    ---smaller-font-size: 1,2em;
-    ---base-font-size: 1.6rem;
-    ---bigger-font-size: 2rem;
-    --gutter-size: 2rem;
+    /* Font sizes */
+    --smaller-font-size: 1,2em;
+    --base-font-size: 1.6rem;
+    --bigger-font-size: 2rem;
+
+    /* Font weights */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    /* Colors */
+    --color-primary: orange;
+
+    /* Hamburger */
     --hamburger-display: block;
-    ---breapoint-row-col-width: 100%;
+
+    /* Grid */
+    --gutter-size: 2rem;
+    --breapoint-row-col-width: 100%;
 }
 
 @media (min-width: 800px) {
@@ -21,7 +33,7 @@
 
 @media (min-width: 1200px) {
     :root {
-        ---breapoint-row-col-width: 50%;
+        --breapoint-row-col-width: 50%;
         --gutter-size: 1rem;
     }
 }
@@ -32,7 +44,7 @@ html {
 }
 
 body {
-    font-size: var(---base-font-size);
+    font-size: var(--base-font-size);
 }
 
 /*****  reusable *****/
@@ -52,7 +64,7 @@ body {
 }
 
 .Row__col {
-    width: calc(var(---breapoint-row-col-width) - var(--gutter-size));
+    width: calc(var(--breapoint-row-col-width) - var(--gutter-size));
     padding: var(--gutter-size);
 }
 
@@ -87,7 +99,7 @@ body {
 }
 
 .Header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("./images/chalka.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("./images/skola.jpg");
     height: 100vh;
     background-size: cover;
     letter-spacing: 1px;
@@ -119,7 +131,7 @@ body {
 
 .Navigation li a {
     color: inherit;
-    font-size: var(---bigger-font-size);
+    font-size: var(--bigger-font-size);
     text-decoration: none;
     transition: 0.5s;
 }
@@ -261,12 +273,12 @@ body {
 
 /****** main *****/
 .Benefits {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .Benefits p {
     margin-left: 70px;
-    font-size: var(---bigger-font-size);
+    font-size: var(--bigger-font-size);
     padding-top: 15px;
 }
 
@@ -322,7 +334,7 @@ body {
 
 /****** REFERENCE ******/
 .Reference {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("/images/chalka.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("/images/skola.jpg");
     height: 200px;
 }
 
@@ -372,17 +384,23 @@ body {
 }
 
 .NewsItem__caption {
-    opacity: 0;
     position: absolute;
     bottom: 20px;
     left: 20px;
     transition: all 0.5s;
     color: white;
-    font-weight: 700;
-    font-size: var(---bigger-font-size);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--bigger-font-size);
+    background-color: orange;
+    padding: 10px;
 }
 
-.NewsItem:hover .NewsItem__caption {
+.NewsItem__caption-onHover {
+    opacity: 0;
+    font-weight: var(--font-weight-normal);
+}
+
+.NewsItem:hover .NewsItem__caption-onHover {
     opacity: 1;
 }
 
@@ -395,7 +413,7 @@ body {
 }
 
 .EmployeeItems__name {
-    font-size: var(---bigger-font-size);
+    font-size: var(--bigger-font-size);
     font-weight: 700;
 
 }
@@ -415,7 +433,7 @@ body {
 }
 
 .EmployeePost {
-    font-size: var(---smaller-font-size);
+    font-size: var(--smaller-font-size);
     font-weight: 200;
     padding-left: 2%;
 }
