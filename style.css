@@ -421,40 +421,6 @@ body {
 
 /* Zamestnanci */
 
-@media (max-width: 799px) {
-
-    .column25Employee{
-        float: left !important;
-        width: 100% !important;
-    }
-
-    .column75Employee{
-        float: left !important;
-        width: 100% !important;
-    }
-
-    .EmployeeItems{
-        grid-template-columns: auto !important;
-        
-    }
-}
-
-@media (max-width: 1299px) {
-
-    .column25Employee{
-        float: left !important;
-        width: 100% !important;
-    }
-
-    .column75Employee{
-        float: left !important;
-        width: 100% !important;
-    }
-
-    
-}
-
-
 .column25Employee {
     float: left;
     width: 25%; 
@@ -508,25 +474,42 @@ body {
 }
 
 
-/* Vyhledavani */
+@media (max-width: 799px) {
 
-@media (max-width: 899px) {
-
-    .column25Search{
-        float: left !important;
-        width: 100% !important;
+    .column25Employee{
+        float: left ;
+        width: 100% ;
     }
 
-    .column75Search{
-        float: left !important;
-        width: 100% !important;
+    .column75Employee{
+        float: left ;
+        width: 100% ;
     }
 
-    .SearchText{
-        padding-bottom: 50px !important;
+    .EmployeeItems{
+        grid-template-columns: auto ;
+        
     }
+}
+
+@media (max-width: 1299px) {
+
+    .column25Employee{
+        float: left ;
+        width: 100% ;
+    }
+
+    .column75Employee{
+        float: left ;
+        width: 100% ;
+    }
+
     
 }
+
+/* Vyhledavani */
+
+
 
 .column25Search{
     float: left;
@@ -565,5 +548,23 @@ body {
 .SearchType{
     font-size: var(--smaller-font-size);
     font-weight: 200;
+    
+}
+
+@media (max-width: 899px) {
+
+    .column25Search{
+        float: left ;
+        width: 100% ;
+    }
+
+    .column75Search{
+        float: left ;
+        width: 100% ;
+    }
+
+    .SearchText{
+        padding-bottom: 50px 
+    }
     
 }
