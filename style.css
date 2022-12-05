@@ -146,6 +146,8 @@ body {
         float: right;
         color: white;
     }
+
+    
 }
 
 @media (max-width: 799px) {
@@ -163,6 +165,7 @@ body {
         color: white;
         transition: all 0.5s;
     }
+
 
 }
 
