@@ -406,6 +406,16 @@ body {
 
 /* Zamestnanci */
 
+.column25 {
+    float: left;
+    width: 25%; 
+   }
+
+.column75{
+    float: left;
+    width: 75%; 
+   }
+
 .EmployeeItems {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -436,4 +446,8 @@ body {
     font-size: var(--smaller-font-size);
     font-weight: 200;
     padding-left: 2%;
+}
+
+.EmployeePhoto{
+    border-radius: 50%;
 }
