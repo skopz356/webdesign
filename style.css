@@ -421,6 +421,25 @@ body {
 
 /* Zamestnanci */
 
+@media (max-width: 799px) {
+
+    .column25{
+        float: left;
+        width: 100%;
+    }
+
+    .column75{
+        float: left;
+        width: 100%;
+    }
+
+    .EmployeeItems{
+        grid-template-columns: auto;
+        
+    }
+}
+
+
 .column25 {
     float: left;
     width: 25%; 
