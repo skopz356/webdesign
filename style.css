@@ -404,6 +404,18 @@ body {
     opacity: 1;
 }
 
+
+.SearchButton{
+    background-color: #3567e1;
+    color: white;
+    border-radius: 20%;
+    padding: 5px;
+}
+
+.SearchImput{
+    border-color: #3567e1;
+}
+
 /* Zamestnanci */
 
 .column25 {
@@ -460,6 +472,7 @@ body {
 
 
 /* Vyhledavani */
+
 .SearchHeader{
     text-align: center;
     font-size: var(--bigger-font-size);
