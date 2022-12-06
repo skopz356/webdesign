@@ -10,15 +10,12 @@
     --base-font-size: 1.6rem;
     --bigger-font-size: 2rem;
 
-    
-
     /* Font weights */
     --font-weight-normal: 400;
     --font-weight-bold: 700;
 
     /* Colors */
     --color-primary: orange;
-    --color-shaddow: #3567e1;
 
     /* Hamburger */
     --hamburger-display: block;
@@ -412,14 +409,14 @@ body {
 
 
 .SearchButton{
-    background-color: var(--color-shaddow);
+    background-color: #3567e1;
     color: white;
     border-radius: 20%;
     padding: 5px;
 }
 
 .SearchInput{
-    border-color: var(--color-shaddow);
+    border-color: #3567e1;
 }
 
 /* Zamestnanci */
@@ -455,7 +452,7 @@ body {
 
 .EmployeeCard {
     padding: 20px;
-    box-shadow: var(--color-shaddow);
+    box-shadow: orange 10px 10px 40px;
     margin: 20px;
     max-width: 550px;
 }
@@ -538,7 +535,7 @@ body {
     margin-top: 50px;
     padding: 20px;
     margin-bottom: 30px;
-    box-shadow: var(--color-shaddow);
+    box-shadow: orange 10px 10px 40px;
     display: flex;
 }
 
@@ -557,7 +554,8 @@ body {
 }
 
 .SearchLink{
-    color: var(--color-shaddow);
+    margin-top: 20px;
+    color: #3567e1;
 }
 
 .SearchLink::after{
