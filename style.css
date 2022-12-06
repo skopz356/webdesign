@@ -551,6 +551,16 @@ body {
 
 }
 
+.SearchLink{
+    margin-top: 20px;
+    color: #3567e1;
+}
+
+.SearchLink::after{
+    content:'  \25BA';
+}
+
+
 @media (max-width: 899px) {
 
     .column25Search{
