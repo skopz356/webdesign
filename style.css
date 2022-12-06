@@ -629,11 +629,6 @@ body {
     
 }
 
-.SocialIcons{
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
 aside{
     display: grid;
     grid-template-columns: auto;
@@ -641,6 +636,7 @@ aside{
     margin-left: 100px;
     margin-top: 100px;
     position: static;
+    max-width: 50%;
     
 }
 
@@ -648,5 +644,35 @@ aside{
     background-color: #c2cff0;
     padding: 30px;
     border-radius: 20px;
+}
+
+.SocialIcons{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    padding-top: 50px;
+}
+
+.Facebook{
+    background-color: #3567e1;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    max-width: 40px;
+}
+
+.Instagram{
+    background-color: #3567e1;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    max-width: 40px;
+}
+
+.Twitter{
+    background-color: #3567e1;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    max-width: 40px;
 }
 
