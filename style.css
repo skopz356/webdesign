@@ -66,6 +66,7 @@ body {
 .Row__col {
     width: calc(var(--breapoint-row-col-width) - var(--gutter-size));
     padding: var(--gutter-size);
+    
 }
 
 .clearfix:after {
@@ -579,4 +580,50 @@ body {
         padding-bottom: 50px
     }
 
+}
+
+/* Kontakt */
+
+
+.ContactHeading{
+    padding-bottom: 50px;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.ContactHeadingName{
+    padding-bottom: 20px;
+    
+}
+
+.ContactItems{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 30px;
+    
+}
+
+.ContactName{
+    padding-bottom: 20px;
+}
+
+.ContactCard{
+    padding: 20px;
+    box-shadow: orange 10px 10px 40px;
+    display: flex;
+    max-width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.column25Contact{
+    float: left;
+    width: 25%;
+}
+
+.column75Contact{
+    float: left;
+    width: 75%;
+    
 }
