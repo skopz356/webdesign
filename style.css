@@ -532,9 +532,11 @@ body {
 }
 
 .SearchCard{
-    margin-top: 110px;
+    margin-top: 50px;
     padding: 20px;
-    margin-bottom: 110px;
+    margin-bottom: 30px;
+    box-shadow: orange 10px 10px 40px;
+    display: flex;
 }
 
 .SearchHead{
