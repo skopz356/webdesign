@@ -678,3 +678,136 @@ aside{
     max-width: 40px;
 }
 
+
+
+
+
+
+
+
+
+/* Novinky */
+.post_card{
+    box-shadow: orange 10px 10px 40px; 
+    display: flex; 
+    padding: 2rem;
+    margin: 3rem; 
+    flex-direction: column;
+}
+
+.post_card_head{
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+.post_card_body_footer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 3rem;
+}
+@media (min-width: 500px) {
+    .post_card_body_footer{
+        margin-left: 2rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .post_card {
+        flex-direction: row;
+    }
+    .post_card_head{
+        max-width: 200px;
+        margin-bottom: 0rem;
+    }
+    .post_card_body{
+        margin-left: 2rem;
+    }
+}
+
+
+/* CLANKY */ 
+.article_card{
+    box-shadow: orange 10px 10px 40px; 
+    display: flex; 
+    padding: 2rem;
+    margin: 2rem; 
+    flex-direction: column;
+}
+.article_card_author{
+    display: flex;
+    align-items: center;
+}
+.article_card_content{
+    padding-top: 2rem;
+    margin: auto;
+    width: 90%;
+}
+.article_card_content *{
+    margin-bottom: 20px;
+}
+@media (min-width: 600px) {
+    .article_card {
+        margin: auto;
+        width: 70%;
+    }
+}
+
+.article_card_content_galery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.article_card_content_galery figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 180px;
+    margin: auto;
+}
+
+.article_card_content_galery img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+.article_card_content_galery figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+
+/* HELPERS */
+
+.pb2{
+    padding-bottom: 2rem;
+}
+.pl2{
+    margin-left: 2rem;
+}
+.pr2{
+    padding-right: 2rem;
+}
+.pt2{
+    padding-top: 2rem;
+}
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
