@@ -6,7 +6,7 @@
 
 :root {
     /* Font sizes */
-    --smaller-font-size: 1,2em;
+    --smaller-font-size: 1, 2em;
     --base-font-size: 1.6rem;
     --bigger-font-size: 2rem;
 
@@ -20,21 +20,34 @@
     /* Hamburger */
     --hamburger-display: block;
 
+    /* Header */
+    --header-logo-width: 80px;
+    --header-logo-top: 5px;
+    --header-logo-left: 5px;
+
     /* Grid */
     --gutter-size: 2rem;
     --breapoint-row-col-width: 100%;
+    --breakpoint-row-col-width-75: 100%;
+    --breakpoint-row-col-width-25: 100%;
 }
 
 @media (min-width: 800px) {
     :root {
         --hamburger-display: none;
+        --header-logo-width: 150px;
+        --header-logo-top: 5%;
+        --header-logo-left: 30px;
     }
 }
 
 @media (min-width: 1200px) {
     :root {
         --breapoint-row-col-width: 50%;
+        --breakpoint-row-col-width-75: 75%;
+        --breakpoint-row-col-width-25: 25%;
         --gutter-size: 1rem;
+        --header-logo-width: 250px;
     }
 }
 
@@ -66,7 +79,16 @@ body {
 .Row__col {
     width: calc(var(--breapoint-row-col-width) - var(--gutter-size));
     padding: var(--gutter-size);
-    
+}
+
+.Row__col-75 {
+    width: calc(var(--breakpoint-row-col-width-75) - var(--gutter-size));
+    padding: var(--gutter-size);
+}
+
+.Row__col-25 {
+    width: calc(var(--breakpoint-row-col-width-25) - var(--gutter-size));
+    padding: var(--gutter-size);
 }
 
 .clearfix:after {
@@ -78,44 +100,41 @@ body {
 .BasicHeading {
     text-align: center;
     margin-top: 20px;
-}
-
-.BasicHeading:after {
-    display: block;
-    content: "";
-    width: 200px;
-    border: 1px solid #3567e1;
-    margin: 0 auto 20px 0;
+    margin-bottom: 20px;
 }
 
 
 /*****  header *****/
-
-#logo img {
-    display: block;
-    width: 250px;
-    position: absolute;
-    top: 5%;
-    z-index: 1000;
-}
-
 .Header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("./images/skola.jpg");
-    height: 100vh;
+    height: 70vh;
     background-size: cover;
     letter-spacing: 1px;
-
 }
 
-.Header-list {
+.HeaderList {
     background: unset;
-    height: 120px;
+    height: 150px;
 }
 
-.Header-list .Navigation {
+.HeaderList .Navigation {
     color: black;
 }
 
+.Header__logo img {
+    display: block;
+    width: var(--header-logo-width);
+    position: absolute;
+    top: var(--header-logo-top);
+    left: var(--header-logo-left);
+    z-index: 1000;
+}
+
+@media (min-width: 800px) {
+    .Header {
+        height: 100vh;
+    }
+}
 
 /* Navigace */
 .Navigation.Navigation-mobileOpened ul {
@@ -147,8 +166,6 @@ body {
         float: right;
         color: white;
     }
-
-
 }
 
 @media (max-width: 799px) {
@@ -166,8 +183,6 @@ body {
         color: white;
         transition: all 0.5s;
     }
-
-
 }
 
 /* Navigace hamburger */
@@ -244,8 +259,8 @@ body {
 
 .SocialLinks {
     position: absolute;
-    top: 50%;
-    left: 16%;
+    top: 30%;
+    left: 10%;
     transform: translate(-10%, -40%);
     letter-spacing: 3px;
     color: white;
@@ -273,6 +288,13 @@ body {
     background-color: #0e255e;
     border: 1px solid #0e255e;
     transition: 0.5s;
+}
+
+@media (min-width: 800px) {
+    .SocialLinks {
+        top: 50%;
+        left: 16%;
+    }
 }
 
 /****** main *****/
@@ -356,6 +378,7 @@ body {
 .Form {
     max-width: 900px;
     width: 100%;
+    padding: 10px;
 }
 
 .Form input, .Form textarea {
@@ -400,7 +423,7 @@ body {
 }
 
 .NewsItem__caption-onHover {
-    opacity: 0;
+    opacity: 1;
     font-weight: var(--font-weight-normal);
 }
 
@@ -408,16 +431,29 @@ body {
     opacity: 1;
 }
 
+@media (min-width: 800px) {
+    .NewsItem__caption-onHover {
+        opacity: 0;
+    }
+}
 
-.SearchButton{
+/* Search */
+
+.SearchButton {
     background-color: #3567e1;
+    border: unset;
     color: white;
     border-radius: 20%;
     padding: 5px;
 }
 
-.SearchInput{
+.SearchInput {
     border-color: #3567e1;
+    padding: 10px;
+}
+
+.SearchInput:focus {
+    outline: unset;
 }
 
 /* Zamestnanci */
@@ -425,12 +461,12 @@ body {
 .column25Employee {
     float: left;
     width: 25%;
-   }
+}
 
-.column75Employee{
+.column75Employee {
     float: left;
     width: 75%;
-   }
+}
 
 .EmployeeItems {
     display: grid;
@@ -445,7 +481,7 @@ body {
 }
 
 .EmployeeHead {
-    margin-top: 200px;
+    margin-top: 100px;
     text-align: center;
     padding-bottom: 20px;
     font-size: 40px;
@@ -465,196 +501,168 @@ body {
 }
 
 
-.EmployeeText{
+.EmployeeText {
     padding-top: 15px;
     padding-bottom: 10px;
 }
 
-.EmployeePhoto{
+.EmployeePhoto {
     border-radius: 50%;
 }
 
 
 @media (max-width: 799px) {
-
-    .column25Employee{
-        float: left ;
-        width: 100% ;
-    }
-
-    .column75Employee{
-        float: left ;
-        width: 100% ;
-    }
-
-    .EmployeeItems{
-        grid-template-columns: auto ;
-
+    .EmployeeItems {
+        grid-template-columns: auto;
     }
 }
 
 @media (max-width: 1299px) {
-
-    .column25Employee{
-        float: left ;
-        width: 100% ;
+    .column25Employee {
+        float: left;
+        width: 100%;
     }
 
-    .column75Employee{
-        float: left ;
-        width: 100% ;
+    .column75Employee {
+        float: left;
+        width: 100%;
     }
-
-
 }
 
 /* Vyhledavani */
-
-
-
-.column25Search{
+.column25Search {
     float: left;
     width: 25%;
 }
 
-.column75Search{
+.column75Search {
     float: left;
     width: 75%;
 }
 
-.SearchHeader{
+.SearchHeader {
     text-align: center;
     font-size: var(--bigger-font-size);
 }
 
-.SearchItems{
+.SearchItems {
     padding: 30px;
     margin-top: 200px;
 }
 
-.SearchCard{
+.SearchCard {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
     padding: 20px;
     margin-bottom: 30px;
     box-shadow: orange 10px 10px 40px;
-    display: flex;
 }
 
-.SearchHead{
+.SearchHead {
     font-size: var(--bigger-font-size);
 }
 
-.SearchText{
+.SearchText {
     font-size: var(--smaller-font-size);
 }
 
-.SearchType{
+.SearchType {
     font-size: var(--smaller-font-size);
     font-weight: 200;
 
 }
 
-.SearchLink{
+.SearchLink {
     margin-top: 20px;
     color: #3567e1;
 }
 
-.SearchLink::after{
-    content:'  \25BA';
+.SearchLink::after {
+    content: '  \25BA';
 }
 
 
 @media (max-width: 899px) {
 
-    .column25Search{
-        float: left ;
-        width: 100% ;
+    .column25Search {
+        float: left;
+        width: 100%;
     }
 
-    .column75Search{
-        float: left ;
-        width: 100% ;
+    .column75Search {
+        float: left;
+        width: 100%;
     }
 
-    .SearchText{
+    .SearchText {
         padding-bottom: 50px
     }
-
 }
 
 /* Kontakt */
 
-
-.ContactHeading{
+.ContactHeading {
+    margin-top: 100px;
     padding-bottom: 50px;
-    padding-top: 120px;
     text-align: center;
 }
 
-.ContactHeadingName{
+.ContactHeadingName {
     padding-bottom: 20px;
-    
 }
 
-.ContactItems{
+.ContactItems {
     display: grid;
     grid-template-columns: auto;
+    grid-gap: 30px;
     padding: 30px;
-    
 }
 
-.ContactName{
+.ContactName {
     padding-bottom: 20px;
 }
 
-.ContactCard{
+.ContactCard {
     padding: 20px;
     box-shadow: orange 10px 10px 40px;
     display: flex;
-    max-width: 50%;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 
-.column25Contact{
+.column25Contact {
     float: left;
     width: 25%;
 }
 
-.column75Contact{
+.column75Contact {
     float: left;
     width: 75%;
     padding-left: 20px;
-    
 }
 
-aside{
-    display: grid;
+.ContactLinks {
+    display: none;
     grid-template-columns: auto;
-    max-width: 100%;
     margin-left: 200px;
     margin-top: 100px;
-    position: -webkit-sticky;
     position: sticky;
     max-width: 50%;
-
-    
 }
 
-.CallAction{
+.CallAction {
     background-color: #c2cff0;
     padding: 30px;
-    
 }
 
-.SocialIcons{
+.SocialIcons {
     display: grid;
     grid-template-columns: 50px 50px 50px;
     padding-top: 50px;
 }
 
-.Facebook{
+.Facebook {
     background-color: #3567e1;
     border-radius: 50%;
     color: white;
@@ -662,7 +670,7 @@ aside{
     max-width: 40px;
 }
 
-.Instagram{
+.Instagram {
     background-color: #3567e1;
     border-radius: 50%;
     color: white;
@@ -670,11 +678,21 @@ aside{
     max-width: 40px;
 }
 
-.Twitter{
+.Twitter {
     background-color: #3567e1;
     border-radius: 50%;
     color: white;
     font-size: 30px;
     max-width: 40px;
+}
+
+@media (min-width: 800px) {
+    .ContactLinks {
+        display: grid;
+    }
+
+    .ContactItems {
+        grid-template-columns: auto auto;
+    }
 }
 
