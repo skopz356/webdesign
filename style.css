@@ -136,6 +136,12 @@ body {
     }
 }
 
+@media (max-height: 720px) {
+    .Header {
+        height: 100vh;
+    }
+}
+
 /* Navigace */
 .Navigation.Navigation-mobileOpened ul {
     transform: translateY(0);
@@ -294,6 +300,12 @@ body {
     .SocialLinks {
         top: 50%;
         left: 16%;
+    }
+}
+
+@media (max-height: 720px) {
+    .SocialLinks {
+        top: 50%;
     }
 }
 
