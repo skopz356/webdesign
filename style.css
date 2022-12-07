@@ -316,13 +316,13 @@ body {
     text-align: center;
     padding: 15px;
     float: left;
+    margin-bottom: 15px;
 }
 
 .Benefits__grid {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
-    grid-template-rows: [row] auto [row] auto [row];
+    grid-template-columns: auto;
 }
 
 .Benefits__grid__item {
@@ -333,29 +333,36 @@ body {
     font-size: 150%;
 }
 
-.Benefits__grid__item-love {
-    grid-column: col / span 2;
-    grid-row: row;
-}
+@media (min-width: 800px) {
+    .Benefits__grid {
+        grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
+        grid-template-rows: [row] auto [row] auto [row];
+    }
 
-.Benefits__grid__item-ingredients {
-    grid-column: col 3 / span 2;
-    grid-row: row;
-}
+    .Benefits__grid__item-love {
+        grid-column: col / span 2;
+        grid-row: row;
+    }
 
-.Benefits__grid__item-experience {
-    grid-column: col;
-    grid-row: row 2;
-}
+    .Benefits__grid__item-ingredients {
+        grid-column: col 3 / span 2;
+        grid-row: row;
+    }
 
-.Benefits__grid__item-own {
-    grid-column: col 2 / span 3;
-    grid-row: row 2;
-}
+    .Benefits__grid__item-experience {
+        grid-column: col;
+        grid-row: row 2;
+    }
 
-.Benefits__grid__item-customers {
-    grid-column: col / span 4;
-    grid-row: row 3;
+    .Benefits__grid__item-own {
+        grid-column: col 2 / span 3;
+        grid-row: row 2;
+    }
+
+    .Benefits__grid__item-customers {
+        grid-column: col / span 4;
+        grid-row: row 3;
+    }
 }
 
 /****** REFERENCE ******/
@@ -696,20 +703,12 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
 /* Novinky */
 .post_card{
-    box-shadow: orange 10px 10px 40px; 
-    display: flex; 
+    box-shadow: orange 10px 10px 40px;
+    display: flex;
     padding: 2rem;
-    margin: 3rem; 
+    margin: 3rem;
     flex-direction: column;
 }
 
@@ -743,12 +742,12 @@ body {
 }
 
 
-/* CLANKY */ 
+/* CLANKY */
 .article_card{
-    box-shadow: orange 10px 10px 40px; 
-    display: flex; 
+    box-shadow: orange 10px 10px 40px;
+    display: flex;
     padding: 2rem;
-    margin: 2rem; 
+    margin: 2rem;
     flex-direction: column;
 }
 .article_card_author{
