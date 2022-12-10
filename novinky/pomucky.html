@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
+    <script src="../script.js"></script>
     <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,39 +9,39 @@
     <title>Pomůcky pro nadcházející školní rok  | Základní škola Prčice</title>
 </head>
 <body>
-    <header class="Header-list">
-        <div class="container">
-            <div id="logo">
-                <a href="../">
-                    <img src="../images/logo.png" alt="Základní škola prčice">
-                </a>
-            </div>
-    
-            <div class="Navigation">
-                <div class="Navigation__hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul>
-                    <li><a href="../">Úvod</a></li>
-                    <li><a href="../novinky/">Novinky</a></li>
-                    <li><a href="../zamestnanci/">Zaměstnanci</a></li>
-                    <li><a href="../kontakty">Kontakty</a></li>
-                    <li>
-                        <form action="../Vyhledavani/">
-                            <input class="SearchInput" type="search" placeholder="Vyhledat..." aria-label="Vyhledat">
-                            <button class="SearchButton">Hledat</button>
-                      </form>
-                    </li>
-                </ul>
-            </div>
+<header class="HeaderList">
+    <div class="container">
+        <div id="logo" class="Header__logo">
+            <a href="../">
+                <img src="../images/logo.png" alt="Základní škola prčice">
+            </a>
         </div>
-    </header>
+
+        <div class="Navigation">
+            <div class="Navigation__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="../">Úvod</a></li>
+                <li><a href="../novinky/" class="Navigation__item-active">Novinky</a></li>
+                <li><a href="../zamestnanci/">Zaměstnanci</a></li>
+                <li><a href="../kontakty">Kontakty</a></li>
+                <li>
+                    <form action="../Vyhledavani/">
+                        <input class="SearchInput" type="search" placeholder="Vyhledat..." aria-label="Vyhledat">
+                        <button class="SearchButton">Hledat</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
 <main>
     <div class="container">
-        <h1 class="EmployeeHead">Pomůcky pro nadcházející školní rok </h1>
+        <h1 class="EmployeeHead">Školní výlet do Zoo Praha</h1>
         <section class="article_card">
             <div class="article_card_author">
                 <img class="EmployeePhoto" src="../images/skola.jpg" alt="Marek Navrátil" height="70px" width="70px">
@@ -49,21 +50,47 @@
             <span class="pt2">Publikováno: 6. 12. 2022</span>
             <div class="article_card_content">
                 <h4>Lorem ipsum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor sapien, molestie vitae ornare non, tincidunt sit amet turpis. Nullam tincidunt suscipit vestibulum. Etiam auctor lectus at felis elementum cursus. Nulla ultricies erat at scelerisque eleifend. Proin interdum lorem in nunc dignissim posuere. Morbi fringilla urna pellentesque diam cursus faucibus. Fusce mi dui, scelerisque vitae risus id, aliquam accumsan nunc.</p>
-                <ul class="pl2">      
-                    <li>mikrotužka nebo tužka č. 3, 1 </li>
-                    <li>kovové kružítko</li>
-                    <li>pravítko 30 cm</li>
-                    <li>trojúhelník s ryskou</li>
-                    <li>úhloměr do 180° (půlkruh)</li>
-                    <li>pastelky (5 barev)</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor sapien, molestie vitae ornare non, tincidunt sit amet turpis. Nullam tincidunt suscipit vestibulum. Etiam auctor lectus at felis elementum cursus. Nulla ultricies erat at scelerisque eleifend. Proin interdum lorem in nunc dignissim posuere. Morbi fringilla urna pellentesque diam cursus faucibus. Fusce mi dui, scelerisque vitae risus id, aliquam accumsan nunc.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor sapien, molestie vitae ornare non, tincidunt sit amet turpis. Nullam tincidunt suscipit vestibulum. Etiam auctor lectus at felis elementum cursus. Nulla ultricies erat at scelerisque eleifend. Proin interdum lorem in nunc dignissim posuere. Morbi fringilla urna pellentesque diam cursus faucibus. Fusce mi dui, scelerisque vitae risus id, aliquam accumsan nunc.</p>
-            
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor sapien, molestie vitae ornare
+                    non, tincidunt sit amet turpis. Nullam tincidunt suscipit vestibulum. Etiam auctor lectus at felis
+                    elementum cursus. Nulla ultricies erat at scelerisque eleifend. Proin interdum lorem in nunc
+                    dignissim posuere. Morbi fringilla urna pellentesque diam cursus faucibus. Fusce mi dui, scelerisque
+                    vitae risus id, aliquam accumsan nunc.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor sapien, molestie vitae ornare
+                    non, tincidunt sit amet turpis. Nullam tincidunt suscipit vestibulum. Etiam auctor lectus at felis
+                    elementum cursus. Nulla ultricies erat at scelerisque eleifend. Proin interdum lorem in nunc
+                    dignissim posuere. Morbi fringilla urna pellentesque diam cursus faucibus. Fusce mi dui, scelerisque
+                    vitae risus id, aliquam accumsan nunc.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor sapien, molestie vitae ornare
+                    non, tincidunt sit amet turpis. Nullam tincidunt suscipit vestibulum. Etiam auctor lectus at felis
+                    elementum cursus. Nulla ultricies erat at scelerisque eleifend. Proin interdum lorem in nunc
+                    dignissim posuere. Morbi fringilla urna pellentesque diam cursus faucibus. Fusce mi dui, scelerisque
+                    vitae risus id, aliquam accumsan nunc.</p>
+                <div class="article_card_content_galery">
+                    <figure>
+                        <img src="../images/novinky/zirafa.jpg"
+                             alt="Žirafa Mirka">
+                        <figcaption>Žirafa jménem Mirka se dětem moc libila</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/novinky/zirafa.jpg"
+                             alt="Žirafa Mirka">
+                        <figcaption>Žirafa jménem Mirka se dětem moc libila</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/novinky/zirafa.jpg"
+                             alt="Žirafa Mirka">
+                        <figcaption>Žirafa jménem Mirka se dětem moc libila</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/novinky/zirafa.jpg"
+                             alt="Žirafa Mirka">
+                        <figcaption>Žirafa jménem Mirka se dětem moc libila</figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
     </div>
+</main>
 <footer class="Footer">
     Studentský projekt, vytvořili Kubát, Šímůnek, Pilař
 </footer>
