@@ -710,7 +710,7 @@ body {
 }
 
 /* Novinky */
-.post_card{
+.post_card {
     box-shadow: orange 10px 10px 40px;
     display: flex;
     padding: 2rem;
@@ -718,18 +718,20 @@ body {
     flex-direction: column;
 }
 
-.post_card_head{
+.post_card_head {
     max-width: 600px;
     margin-bottom: 2rem;
 }
-.post_card_body_footer{
+
+.post_card_body_footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     margin-top: 3rem;
 }
+
 @media (min-width: 500px) {
-    .post_card_body_footer{
+    .post_card_body_footer {
         margin-left: 2rem;
     }
 }
@@ -738,36 +740,42 @@ body {
     .post_card {
         flex-direction: row;
     }
-    .post_card_head{
+
+    .post_card_head {
         max-width: 200px;
         margin-bottom: 0rem;
     }
-    .post_card_body{
+
+    .post_card_body {
         margin-left: 2rem;
     }
 }
 
 
 /* CLANKY */
-.article_card{
+.article_card {
     box-shadow: orange 10px 10px 40px;
     display: flex;
     padding: 2rem;
     margin: 2rem;
     flex-direction: column;
 }
-.article_card_author{
+
+.article_card_author {
     display: flex;
     align-items: center;
 }
-.article_card_content{
+
+.article_card_content {
     padding-top: 2rem;
     margin: auto;
     width: 90%;
 }
-.article_card_content *{
+
+.article_card_content * {
     margin-bottom: 20px;
 }
+
 @media (min-width: 600px) {
     .article_card {
         margin: auto;
@@ -775,10 +783,11 @@ body {
     }
 }
 
-.article_card_content_galery{
+.article_card_content_galery {
     display: flex;
     flex-wrap: wrap;
 }
+
 .article_card_content_galery figure {
     border: thin #c0c0c0 solid;
     display: flex;
@@ -804,25 +813,28 @@ body {
 
 /* HELPERS */
 
-.pb2{
+.pb2 {
     padding-bottom: 2rem;
 }
-.pl2{
+
+.pl2 {
     margin-left: 2rem;
 }
-.pr2{
+
+.pr2 {
     padding-right: 2rem;
 }
-.pt2{
+
+.pt2 {
     padding-top: 2rem;
 }
-.btn{
+
+.btn {
     display: inline-block;
-    font-weight: 400;
+    font-weight: var(--font-weight-bold);
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    border: 1px solid transparent;
     padding: 0.8rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -832,8 +844,8 @@ body {
     border-color: #007bff;
     cursor: pointer;
     text-decoration: none;
-    font-size: 15px;
 }
+
 @media (min-width: 800px) {
     .ContactLinks {
         display: grid;
