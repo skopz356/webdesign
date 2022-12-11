@@ -276,6 +276,7 @@ body {
 }
 
 .SocialLinks a {
+    margin: 1rem;
     display: inline-block;
     text-decoration: none;
     margin-right: 20px;
@@ -810,6 +811,11 @@ body {
     text-align: center;
 }
 
+.post_card_head img{
+    width:100%;
+    height: auto;
+}
+
 
 /* HELPERS */
 
@@ -830,19 +836,13 @@ body {
 }
 
 .btn {
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    padding: 0.8rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    color: black;
-    background-color: #007bff;
-    border-color: #007bff;
-    cursor: pointer;
+    color: white;
     text-decoration: none;
+    margin-right: 20px;
+    border: 1px solid #3567e1;
+    background-color: #3567e1;
+    padding: 10px 35px;
+    border-radius: 15px;
 }
 
 @media (min-width: 800px) {
