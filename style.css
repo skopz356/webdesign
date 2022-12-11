@@ -104,6 +104,17 @@ body {
     margin-bottom: 20px;
 }
 
+.MainHeading {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+@media (min-width: 800px) {
+    .MainHeading {
+        margin-top: 100px;
+    }
+}
+
 
 /*****  header *****/
 .Header {
