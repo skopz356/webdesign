@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objednávkový formulář - Pizzerie</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+</head>
+<body>
+<header class="HeaderList">
+    <div class="container">
+        <div id="logo" class="Header__logo">
+            <a href="../">
+                <img src="../images/logo.png" alt="Pizzeria">
+            </a>
+        </div>
+
+        <div class="Navigation">
+            <div class="Navigation__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="../">Úvod</a></li>
+                <li><a href="../novinky/" class="Navigation__item-active">Novinky</a></li>
+                <li><a href="../objednat/">Objednat</a></li>
+                <li><a href="../kontakty">Kontakty</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="order-form">
+        <h1 class="order-form__title">Objednávka Pizzy</h1>
+        <form class="order-form__form" action="#" method="POST">
+
+            <!-- Výběr pizzy -->
+            <div class="order-form__field">
+                <label for="pizza" class="order-form__label">Vyberte pizzu:</label>
+                <select id="pizza" name="pizza" class="order-form__select" required>
+                    <option value="" disabled selected>-- Vyberte pizzu --</option>
+                    <option value="margherita">Margherita</option>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="hawaii">Hawaii</option>
+                    <option value="quattro-formaggi">Quattro Formaggi</option>
+                    <option value="vegetariana">Vegetariana</option>
+                </select>
+            </div>
+
+            <!-- Zobrazení obrázku pizzy -->
+            <div class="order-form__image-container">
+                <img id="pizza-image" class="order-form__image" src="" alt="Obrázek pizzy">
+            </div>
+
+            <!-- Počet kusů -->
+            <div class="order-form__field">
+                <label for="quantity" class="order-form__label">Počet kusů:</label>
+                <input type="number" id="quantity" name="quantity" class="order-form__input" min="1" value="1" required>
+            </div>
+
+            <!-- Jméno a příjmení -->
+            <div class="order-form__field">
+                <label for="first-name" class="order-form__label">Jméno:</label>
+                <input type="text" id="first-name" name="first-name" class="order-form__input" required>
+            </div>
+
+            <div class="order-form__field">
+                <label for="last-name" class="order-form__label">Příjmení:</label>
+                <input type="text" id="last-name" name="last-name" class="order-form__input" required>
+            </div>
+
+            <!-- Adresa -->
+            <div class="order-form__field">
+                <label for="address" class="order-form__label">Adresa:</label>
+                <input type="text" id="address" name="address" class="order-form__input" required>
+            </div>
+
+            <!-- Tlačítko odeslat -->
+            <button type="submit" class="order-form__button">Odeslat objednávku</button>
+        </form>
+    </div>
+</main>
+</body>
+</html>

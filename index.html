@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Základní škola Prčice</title>
+    <title>Pizzeria</title>
 </head>
 <body>
 <header class="Header">
     <div class="container">
         <div id="logo" class="Header__logo">
             <a href="./">
-                <img src="./images/logo.png" alt="Základní škola prčice">
+                <img src="./images/logo.png" alt="Pizzeria">
             </a>
         </div>
 
@@ -27,49 +27,41 @@
             <ul>
                 <li><a href="./" class="Navigation__item-active">Úvod</a></li>
                 <li><a href="./novinky/">Novinky</a></li>
-                <li><a href="./zamestnanci/">Zaměstnanci</a></li>
+                <li><a href="./objednat/">Objednat</a></li>
                 <li><a href="./kontakty">Kontakty</a></li>
-                <li>
-                    <form action="./Vyhledavani/">
-                        <input class="SearchInput" type="search" placeholder="Vyhledat..." aria-label="Vyhledat">
-                        <button class="SearchButton">Hledat</button>
-                  </form>
-                </li>
             </ul>
         </div>
     </div>
     <div class="SocialLinks">
-        <h1 class="SocialLinks__title">Základní škola<br> prčice</h1>
-        <a href="#">Rajcenet</a>
-        <a href="#">Bakaláři</a>
-        <a href="#">Školní podcast</a>
+        <h1 class="SocialLinks__title">Pizzerie</h1>
+        <a href="#">Objednat</a>
+        <a href="#">Kontakt</a>
     </div>
 </header>
 <main>
     <section>
         <div class="container">
-            <h2 class="BasicHeading">Novinky ze školy</h2>
+            <h2 class="BasicHeading">Novinky z naší pizzerie</h2>
         </div>
         <div class="Row">
             <div class="Row__col">
                 <a href="novinky/pomucky.html" title="Máme novou pec" class="NewsItem">
                     <div class="NewsItem__caption">
-                        Pomůcky pro školní rok 2022/23
+                        Hledáme nového pizzaře
                         <div class="NewsItem__caption-onHover">
-                            Po rozkliknutí článku se dozvíte více informací o pomůckách potřebných pro školní rok
-                            2022/23
+                            Baví tě péci pizzu? Přidej se k nám! Hledáme nového pizzaře do naší pizzerie.
                         </div>
                     </div>
-                    <img src="./images/novinky/pomucky.jpg" alt="Pomůcky na školní rok 2022" class="img-fluid">
+                    <img src="./images/novinky/pizzar.jpg" alt="Pomůcky na školní rok 2022" class="img-fluid">
                 </a>
             </div>
             <div class="Row__col">
                 <a href="novinky/pomucky.html" title="Máme novou pec" class="NewsItem">
-                    <img src="./images/novinky/zaci.jpg" alt="Žáci přijatí do 1. třídy" class="img-fluid">
+                    <img src="./images/novinky/new_pizza.jpg" alt="Žáci přijatí do 1. třídy" class="img-fluid">
                     <div class="NewsItem__caption">
-                        Žáci přijatí do 1. třídy
+                        Nová pizza v nabídce
                         <div class="NewsItem__caption-onHover">
-                            Po rozkliknutí článku se dozvíte více informací o tom, kteří žáci byli přijati do 1. třídy
+                            Přijďte ochutnat naši novou pizzu s ananasem a šunkou.
                         </div>
                     </div>
                 </a>
@@ -78,85 +70,39 @@
     </section>
     <section>
         <div>
-            <h2 class="BasicHeading">O naší škole</h2>
+            <h2 class="BasicHeading">O naší pizzerii</h2>
             <div class="Row">
                 <div class="Row__col">
-                    <img src="./images/benefity.jpg" alt="O naší škole" class="img-fluid">
+                    <img src="./images/benefity.jpg" alt="O naší pizzerii" class="img-fluid">
                 </div>
                 <div class="Row__col">
                     <div class="Benefits">
                         <div class="clearfix">
                             <div>1</div>
-                            <p>Naše škole se zaměřuje individuálně na každého žáka</p>
+                            <p>Používáme výhradně BIO ingredience</p>
                         </div>
                         <div class="clearfix">
                             <div>2</div>
-                            <p>Naše škola je bezbariérová</p>
+                            <p>Můžete u nás klídně pobýt i déle</p>
                         </div>
 
                         <div class="clearfix">
                             <div>3</div>
-                            <p>Naše škola je ekologická</p>
+                            <p>Venkovní i vnitřní posezení</p>
                         </div>
 
                         <div class="clearfix">
                             <div>4</div>
-                            <p>Ve škole máme i školní jídelnu</p>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>
-                            Na co klademe důraz
-                        </h3>
-                    </div>
-
-                    <div class="Benefits__grid">
-                        <div class="Benefits__grid__item Benefits__grid__item-love">
-                            Individualita
-                        </div>
-                        <div class="Benefits__grid__item Benefits__grid__item-ingredients">
-                            Kreativita
-                        </div>
-                        <div class="Benefits__grid__item Benefits__grid__item-experience">
-                            Sport
-                        </div>
-                        <div class="Benefits__grid__item Benefits__grid__item-own">
-                            Volný čas
-                        </div>
-                        <div class="Benefits__grid__item Benefits__grid__item-customers">
-                            Budoucí uplatnění
+                            <p>Poskytujeme i dovoz</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <h2 class="BasicHeading">Formulář</h2>
-
-        <form class="Form container" action="?">
-            <label for="name">
-                Jméno
-            </label>
-            <input type="text" name="name" id="name">
-            <label for="surname">
-                Přijmení
-            </label>
-            <input type="text" name="surname" id="surname">
-            <label for="mail">
-                Email
-            </label>
-            <input type="email" name="mail" id="mail">
-            <label for="text">
-                Váš text
-            </label>
-            <textarea name="text" id="text" cols="30" rows="5"></textarea>
-            <input type="submit" value="Odeslat">
-        </form>
-    </section>
 </main>
 <footer class="Footer">
-    Studentský projekt, vytvořili Kubát, Šímůnek, Pilař
+    Studentský projekt, vytvořili Kubát, Solnař
 </footer>
 </body>
 </html>

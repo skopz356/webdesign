@@ -118,7 +118,7 @@ body {
 
 /*****  header *****/
 .Header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("./images/skola.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("./images/pizza.webp");
     height: 70vh;
     background-size: cover;
     letter-spacing: 1px;
@@ -394,7 +394,7 @@ body {
 
 /****** REFERENCE ******/
 .Reference {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("/images/skola.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("/images/pizza.webp");
     height: 200px;
 }
 
@@ -479,79 +479,6 @@ body {
 
 .SearchInput:focus {
     outline: unset;
-}
-
-/* Zamestnanci */
-
-.column25Employee {
-    float: left;
-    width: 25%;
-}
-
-.column75Employee {
-    float: left;
-    width: 75%;
-}
-
-.EmployeeItems {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 30px;
-}
-
-.EmployeeItems__name {
-    font-size: var(--bigger-font-size);
-    font-weight: 700;
-
-}
-
-.EmployeeHead {
-    margin-top: 100px;
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 40px;
-}
-
-.EmployeeCard {
-    padding: 20px;
-    box-shadow: orange 10px 10px 40px;
-    margin: 20px;
-    max-width: 550px;
-}
-
-.EmployeePost {
-    font-size: var(--smaller-font-size);
-    font-weight: 200;
-    padding-left: 1%;
-}
-
-
-.EmployeeText {
-    padding-top: 15px;
-    padding-bottom: 10px;
-}
-
-.EmployeePhoto {
-    border-radius: 50%;
-}
-
-
-@media (max-width: 799px) {
-    .EmployeeItems {
-        grid-template-columns: auto;
-    }
-}
-
-@media (max-width: 1299px) {
-    .column25Employee {
-        float: left;
-        width: 100%;
-    }
-
-    .column75Employee {
-        float: left;
-        width: 100%;
-    }
 }
 
 /* Vyhledavani */
@@ -871,4 +798,65 @@ body {
         grid-template-columns: auto auto;
     }
 }
+
+
+
+.order-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-form__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-form__field {
+    margin-bottom: 15px;
+}
+
+.order-form__label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.order-form__select,
+.order-form__input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-form__button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.order-form__button:hover {
+    background-color: #e5533d;
+}
+
+.order-form__image-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.order-form__image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: none;
+    border-radius: 10px;
+}
+
 
