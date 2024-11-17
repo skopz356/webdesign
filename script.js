@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const navigation = document.querySelector('.Navigation')
         if(navigation.classList.contains(NAVIGATION_ACTIVE_CLASS)) {
             navigation.classList.remove(NAVIGATION_ACTIVE_CLASS)
-        }else {
+        }else {ě
             navigation.classList.add(NAVIGATION_ACTIVE_CLASS)
         }
     })*/
@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const pizzaImage = document.getElementById("pizza-image");
 
     const pizzaImages  = {
-        margherita: "/images/pizzas/margarita.jpg",
-        pepperoni: "/images/pizzas/peperoni.jpg",
-        hawaii: "/images/pizzas/hawai.jpg",
-        vegetariana: "/images/pizzas/veg.webp",
-        "quattro-formaggi": "/images/pizzas/for.jpg",
+        margherita: "../images/pizzas/margarita.jpg",
+        pepperoni: "../images/pizzas/peperoni.jpg",
+        hawaii: "../images/pizzas/hawai.jpg",
+        vegetariana: "../images/pizzas/veg.webp",
+        "quattro-formaggi": "../images/pizzas/for.jpg",
     };
 
 // Funkce pro zobrazení obrázku
