@@ -583,6 +583,10 @@ body {
     margin-bottom: 20px;
 }
 
+.ContactCard  div:first-child {
+    margin-right: 30px;
+}
+
 .column25Contact {
     float: left;
     width: 25%;
